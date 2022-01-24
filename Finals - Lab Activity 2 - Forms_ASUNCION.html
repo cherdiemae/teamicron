@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+
+    body {
+        min-height: 100vh;
+        width: 100%;
+        background: #c8e8e9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container {
+        width: 85%;
+        background: #fff0e0;
+        border-radius: 6px;
+        padding: 20px 60px 30px 40px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        width: 90%;
+        padding: 30px 40px 40px 35px;
+    }
+    .right-side {
+        float: right;
+        width: 70%;        
+    }
+    .left-side {
+        float: left;
+        width: 30%;
+        text-align: center;
+        margin-top: 10%;
+    }
+    .details {
+        font-weight: bold;
+    }
+    input[type=text], input[type=tel], input[type=date], input[type=comment], textarea {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 2px solid gray;
+        border-radius: 4px;
+    }
+    
+    input[type=tel], input[type=date], input[type=comment] {
+        width: 50%;
+    }
+    input[type="button"]:hover {
+        background: #5029bc;
+    }
+    input[type=text]:hover, input[type=tel]:hover, input[type=date]:hover, input[type=comment]:hover, textarea:hover {
+        background: #e8f8f8;
+    }
+    input[type="button"] {
+        color: #fff;
+        font-size: 18px;
+        outline: none;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 6px;
+        background: #3e2093;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    img {
+        width: 20px;
+        height: 20px;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="left-side">
+                <br />
+                <img src="https://i.dlpng.com/static/png/6947199_preview.png">
+                <p class="details">Address</p>
+                <p>Dasmariñas, 4114</p>
+                <p>Philippines</p>
+                <br /><br />
+
+                <img src="https://i.dlpng.com/static/png/6945242_preview.png">
+                <p class="details">Phone</p>
+                <p>+6398 9893 5647</p>
+                <p>+6396 3434 5678</p>
+                <br /><br />
+
+                <img src="http://cdn.onlinewebfonts.com/svg/img_358140.png">
+                <p class="details">Email</p>
+                <p>cherdiemae@gmail.com</p>
+                <p>cherdiemae@yahoo.com</p>
+
+            </div>
+            <div class="right-side">
+                <h1>Contact Us</h1>
+                <p>If you have questions or concerns, send us a message and we'll get back to you.</p><br /><br />
+
+                <form>
+                    <input type="text" placeholder="Enter FIRST NAME">
+                    <input type="text" placeholder="Enter LAST NAME">
+                    <br>
+                    <input type="text" placeholder="Enter E-MAIL">
+                    <br>
+                    <input type="tel" placeholder="Enter CONTACT No.">
+                    <br><br>
+                    <label for="email" class="details">Date of birth</label><br />
+                    <input type="date" placeholder="Enter Birth Date">
+                    <br><br>
+                    <label for="gender" class="details">Gender</label><br />
+                    <input type="radio" id="Male" name="gender">
+                    <label for="gender">Male</label>
+                    <input type="radio" id="Female" name="gender">
+                    <label for="gender">Female</label>
+                    <br><br>
+                    <label for="comment" class="details">Message</label><br>
+                    <textarea name="comment" cols="50" rows="5">Enter your message</textarea>
+                    <br><br>
+                    <input type="button" value="Send">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
