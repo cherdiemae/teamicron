@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <style>    
+                body {
+                    color: #7f8c8d;
+                    font-size: 16px;
+                }
+
+                h1,
+                h2,
+                h3,
+                h4,
+                h5,
+                h6,
+                {
+                    color: #34495e;
+                }
+                /*
+         * --  BUTTONS  --
+         */
+                .zbt-button {
+                    background-color: #1f8dd6;
+                    color: white;
+                    padding: 0.5em 2em;
+                    border-radius: 5px;
+                    text-decoration: none;
+                }
+
+                a.zbt-button-primary {
+                    background: white;
+                    color: #1f8dd6;
+                    border-radius: 5px;
+                    font-size: 120%;
+                }
+                /*
+         * -- MENU --
+        */
+                .home-menu {
+                    padding: 0.5em;
+                    text-align: center;                    
+                    width: 100%;
+                    background: #000000;                   
+                }
+                li {
+                    display: inline;
+                }
+
+                .zbt-menu.zbt-menu-fixed {
+                    /* Fixed menus normally have a border at the bottom. */
+                    border-bottom: none;
+                    /* I need a higher z-index here because of the scroll-over effect. */
+                    z-index: 4;
+                }
+
+                .home-menu .zbt-menu-heading {
+                    color: white;
+                    font-weight: 400;
+                    font-size: 120%;
+                }
+
+                .home-menu .zbt-menu-selected a {
+                    color: white;
+                }
+
+                .home-menu a {
+                    color: #6FBEF3;
+                }
+
+                .home-menu li a:hover,
+                .home-menu li a:focus {
+                    background: none;
+                    border: none;
+                    color: #AECFE5;
+                }
+
+
+                /*
+         * -- HEADER BLACK --
+         * This is the blue top section that appears on the page.
+         */
+
+                .splash-container {
+                    background: #000000;
+                    /*    background-image: url('https://i.ibb.co/G7CWBVR/Cloud-Bottle-Tea-Milk2.png');
+                    background-repeat: no-repeat;
+                    background-attachment: fixed;
+                    background-size: 100% 100%;      */
+                    z-index: -1;
+                    overflow: hidden;
+                    /* for "scroll-over" effect */
+                    width: 100%;
+                    height: 90%;
+                    top: 0;
+                    left: 0;
+                    position: fixed !important;
+                }
+
+                .splash {
+                    /* absolute center .splash within .splash-container */
+                    width: 80%;
+                    height: 50%;
+                    margin: auto;
+                    position: absolute;
+                    top: 50px;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+
+                /* This is the main heading that appears on the blue section */
+                .logomain {
+                    width: 70%;
+                    height: 70%;
+                }
+
+                /* This is the subheading that appears on the blue section */
+                .splash-subhead {
+                    color: white;
+                    letter-spacing: 0.05em;
+                    opacity: 0.8;
+                }
+
+                /*
+         * -- CONTENT STYLES --
+         * This represents the content area (everything below the blue section)
+         */
+                .content-wrapper {
+                    /* These styles are required for the "scroll-over" effect */
+                    position: absolute;
+                    top: 87%;
+                    width: 100%;
+                    min-height: 12%;
+                    z-index: 2;
+                    background: white;
+                }
+
+                /* We want to give the content area some more padding */
+                .content {
+                            /* top | horizontal | bottom */
+                    padding: 1em 1em 3em;
+                }
+
+                /* This is the class used for the main content headers (<h2>) */
+                .content-head {
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    letter-spacing: 0.1em;
+                    margin: 2em 0 1em;
+                }
+
+                .is-center {
+                    text-align: center;
+                }
+
+                /* This is the class used for the footer - MUST ADD FOOTER CONTENT*/
+                .footer {
+                    background: #111;
+                    position: fixed;
+                    bottom: 0;
+                    width: 100%;
+                }
+
+                /* We can align the menu header to the left, but float the
+            menu items to the right. */
+                .home-menu {
+                    text-align: left;
+                }
+
+                    .home-menu ul {
+                        float: right;
+                    }
+
+                /* We decrease the width of the .splash, since we have more width
+            to work with */
+                .splash {
+                    width: 50%;
+                    height: 50%;
+                }
+             
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="home-menu zbt-menu zbt-menu-horizontal zbt-menu-fixed">
+            <a class="zbt-menu-heading" href="">ZU BOH TI</a>
+
+            <ul class="zbt-menu-list">
+                <li class="zbt-menu-item zbt-menu-selected"><a href="#" class="zbt-menu-link">Home</a></li>
+                <li class="zbt-menu-item"><a href="#" class="zbt-menu-link">Tour</a></li>
+                <li class="zbt-menu-item"><a href="#" class="zbt-menu-link">Sign Up</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="splash-container">
+        <div class="splash">
+            <img class="logomain" src="https://i.ibb.co/nRGRXYs/logo-white.png" />
+
+            <p class="splash-subhead">
+                "Business tagline will be put here..."
+            </p><br />
+            <p>
+                <a href="http:#" class="zbt-button zbt-button-primary">Order Now</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="content-wrapper">
+        <div class="content">
+            <h2 class="content-head is-center">"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.""On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.""On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.""On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."</h2>
+    </div>
+</div>
+
+</body>
+</html>
+
